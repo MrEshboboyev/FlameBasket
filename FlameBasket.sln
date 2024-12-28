@@ -1,8 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AF35F5B2-8C37-4BAD-BAD6-DCC196C4F495}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{371B23EA-E029-48BA-9310-C2E3868D5DAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{93A396DB-636C-4CDC-B194-40969D0F07DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.Common.Core", "src\common\Flame.Common.Core\Flame.Common.Core.csproj", "{62666E5E-A96D-4114-B05F-D75F814026F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.Common.Domain", "src\common\Flame.Common.Domain\Flame.Common.Domain.csproj", "{2564F5F7-2457-4841-91CF-AC75B64781BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93A396DB-636C-4CDC-B194-40969D0F07DB} = {AF35F5B2-8C37-4BAD-BAD6-DCC196C4F495}
+		{62666E5E-A96D-4114-B05F-D75F814026F5} = {93A396DB-636C-4CDC-B194-40969D0F07DB}
+		{2564F5F7-2457-4841-91CF-AC75B64781BE} = {93A396DB-636C-4CDC-B194-40969D0F07DB}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62666E5E-A96D-4114-B05F-D75F814026F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62666E5E-A96D-4114-B05F-D75F814026F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62666E5E-A96D-4114-B05F-D75F814026F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62666E5E-A96D-4114-B05F-D75F814026F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2564F5F7-2457-4841-91CF-AC75B64781BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2564F5F7-2457-4841-91CF-AC75B64781BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2564F5F7-2457-4841-91CF-AC75B64781BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2564F5F7-2457-4841-91CF-AC75B64781BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
