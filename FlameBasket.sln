@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.Common.Core", "src\co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.Common.Domain", "src\common\Flame.Common.Domain\Flame.Common.Domain.csproj", "{2564F5F7-2457-4841-91CF-AC75B64781BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.BasketContext.Domain", "Flame.BasketContext.Domain\Flame.BasketContext.Domain.csproj", "{B8E8FE46-A932-4055-859E-01F4612E2E5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,7 @@ Global
 		{93A396DB-636C-4CDC-B194-40969D0F07DB} = {AF35F5B2-8C37-4BAD-BAD6-DCC196C4F495}
 		{62666E5E-A96D-4114-B05F-D75F814026F5} = {93A396DB-636C-4CDC-B194-40969D0F07DB}
 		{2564F5F7-2457-4841-91CF-AC75B64781BE} = {93A396DB-636C-4CDC-B194-40969D0F07DB}
+		{B8E8FE46-A932-4055-859E-01F4612E2E5B} = {AF35F5B2-8C37-4BAD-BAD6-DCC196C4F495}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{62666E5E-A96D-4114-B05F-D75F814026F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -29,5 +32,9 @@ Global
 		{2564F5F7-2457-4841-91CF-AC75B64781BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2564F5F7-2457-4841-91CF-AC75B64781BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2564F5F7-2457-4841-91CF-AC75B64781BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E8FE46-A932-4055-859E-01F4612E2E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E8FE46-A932-4055-859E-01F4612E2E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E8FE46-A932-4055-859E-01F4612E2E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E8FE46-A932-4055-859E-01F4612E2E5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
