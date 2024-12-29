@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Flame.BasketContext.Application.Abstractions;
+namespace Flame.BasketContext.Application.Abstractions.Commands;
 
 public interface ICommand : IRequestBase, IRequest<Result<Unit>>
 {

@@ -1,7 +1,7 @@
 ﻿using Flame.Common.Domain.Events;
 using Flame.Common.Domain.Primitives;
 
-namespace Flame.BasketContext.Application.Abstractions;
+namespace Flame.BasketContext.Application.Abstractions.Commands;
 
 public abstract class CommandHandlerBase<TCommand, TResponse>(
     IDomainEventDispatcher domainEventDispatcher,

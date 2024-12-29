@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Flame.BasketContext.Application.Abstractions;
+namespace Flame.BasketContext.Application.Abstractions.Queries;
 
 public interface IQueryHandler<in TRequest, TResponse> 
     : IRequestHandler<TRequest, Result<TResponse, IDomainError>>
