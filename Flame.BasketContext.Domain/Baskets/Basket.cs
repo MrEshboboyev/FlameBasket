@@ -1,4 +1,6 @@
-﻿using Flame.Common.Domain.Exceptions;
+﻿using Flame.BasketContext.Domain.Baskets.Events;
+using Flame.BasketContext.Domain.Baskets.Services;
+using Flame.Common.Domain.Exceptions;
 
 namespace Flame.BasketContext.Domain.Baskets;
 

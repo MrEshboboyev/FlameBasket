@@ -1,4 +1,6 @@
-﻿namespace Flame.BasketContext.Domain.Baskets;
+﻿using Flame.BasketContext.Domain.Baskets.Services;
+
+namespace Flame.BasketContext.Domain.Baskets;
 
 /// <summary>
 /// Represents a seller entity.
