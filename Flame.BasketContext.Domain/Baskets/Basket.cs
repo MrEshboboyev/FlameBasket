@@ -1,5 +1,6 @@
 ﻿using Flame.BasketContext.Domain.Baskets.Events;
 using Flame.BasketContext.Domain.Baskets.Services;
+using Flame.BasketContext.Domain.Coupons;
 using Flame.Common.Domain.Exceptions;
 
 namespace Flame.BasketContext.Domain.Baskets;
@@ -364,7 +365,7 @@ public sealed class Basket : AggregateRoot<Basket>
         if (CouponId == couponId)
             return; // Already applied, no action needed.
 
-        if (!await couponService.isActive(couponId))
+        if (!await couponService.IsActive(couponId))
         {
             throw new ValidationException("Coupon is not active!");
         }
@@ -372,7 +373,7 @@ public sealed class Basket : AggregateRoot<Basket>
         CouponId = couponId;
         RaiseDomainEvent(new CouponAppliedEvent(
             Id,
-            couponId));
+            couponId.Value));
     }
 
     /// <summary>
@@ -385,7 +386,7 @@ public sealed class Basket : AggregateRoot<Basket>
         CouponId = null;
         RaiseDomainEvent(new CouponRemovedEvent(
             Id,
-            couponId!));
+            couponId!.Value));
     }
 
     /// <summary>

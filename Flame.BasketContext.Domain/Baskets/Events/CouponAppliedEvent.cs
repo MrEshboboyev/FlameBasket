@@ -1,4 +1,6 @@
-﻿namespace Flame.BasketContext.Domain.Baskets.Events;
+﻿using Flame.BasketContext.Domain.Coupons;
+
+namespace Flame.BasketContext.Domain.Baskets.Events;
 
 public sealed class CouponAppliedEvent(
     Id<Basket> basketId,

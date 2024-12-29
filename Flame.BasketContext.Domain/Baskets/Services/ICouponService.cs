@@ -1,4 +1,6 @@
-﻿namespace Flame.BasketContext.Domain.Baskets.Services;
+﻿using Flame.BasketContext.Domain.Coupons;
+
+namespace Flame.BasketContext.Domain.Baskets.Services;
 
 public interface ICouponService
 {
