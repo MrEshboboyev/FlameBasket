@@ -104,14 +104,16 @@ public sealed class Basket : AggregateRoot<Basket>
     /// Calculates the total amount of the basket, applying discounts and tax.
     /// </summary>
     /// <param name="couponService">The coupon service to apply discounts.</param>
-    public async Task CalculateTotalAmount(ICouponService couponService)
+    public async Task CalculateTotalAmountAsync(ICouponService couponService)
     {
         var totalAmount = CalculateTotalBasketAmount();
         totalAmount = await ApplyCouponDiscount(totalAmount, couponService);
         totalAmount = ApplyEliteMemberDiscount(totalAmount);
         TotalAmount = ApplyTax(totalAmount);
 
-        RaiseDomainEvent(new TotalAmountCalculatedEvent(this.Id, totalAmount));
+        RaiseDomainEvent(new TotalAmountCalculatedEvent(
+            Id,
+            totalAmount));
     }
 
     #endregion
