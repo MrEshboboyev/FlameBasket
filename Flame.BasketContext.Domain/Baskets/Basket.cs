@@ -51,8 +51,10 @@ public sealed class Basket : AggregateRoot<Basket>
     /// <summary>
     /// Gets the basket items grouped by seller.
     /// </summary>
-    public IDictionary<Seller, 
-        (IList<BasketItem> Items, decimal ShippingAmountLeft)> BasketItems { get; private set; }
+    public IDictionary<
+        Seller, 
+        (IList<BasketItem> Items, decimal ShippingAmountLeft)>
+        BasketItems { get; private set; }
 
     /// <summary>
     /// Gets the tax percentage to apply to the basket.
