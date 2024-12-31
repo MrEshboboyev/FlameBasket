@@ -362,7 +362,7 @@ public sealed class Basket : AggregateRoot<Basket>
     /// </summary>
     /// <param name="couponId">The identifier of the coupon to apply.</param>
     /// <param name="couponService">The coupon service to validate and apply the coupon.</param>
-    public async Task ApplyCoupon(
+    public async Task ApplyCouponAsync(
         Id<Coupon> couponId,
         ICouponService couponService)
     {
