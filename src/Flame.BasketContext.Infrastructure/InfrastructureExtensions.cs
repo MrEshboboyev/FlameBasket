@@ -1,9 +1,11 @@
 ﻿using System.Reflection;
 using Flame.BasketContext.Application.Messaging.Integration;
 using Flame.BasketContext.Application.Repositories;
+using Flame.BasketContext.Domain.Baskets.Services;
 using Flame.BasketContext.Infrastructure.Messaging;
 using Flame.BasketContext.Infrastructure.Persistence;
 using Flame.BasketContext.Infrastructure.Persistence.Repositories;
+using Flame.BasketContext.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -38,6 +40,14 @@ public static class InfrastructureExtensions
     {
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<IBasketRepository, BasketRepository>();
+        services.AddScoped<ICouponRepository, CouponRepository>();
+        
+        #region Services lifecycle
+        
+        services.AddScoped<ICouponService, CouponService>();
+        services.AddScoped<ISellerLimitService, SellerLimitService>();
+        
+        #endregion
 
         // Register AutoMapper
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
