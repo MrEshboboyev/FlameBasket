@@ -136,7 +136,9 @@ public sealed class Basket : AggregateRoot<Basket>
                 .Sum(CalculateSellerAmount);
         }
 
-        RaiseDomainEvent(new BasketItemsAmountCalculatedEvent(Id, totalBasketItemsAmount));
+        RaiseDomainEvent(new BasketItemsAmountCalculatedEvent(
+            Id,
+            totalBasketItemsAmount));
     }
 
     #region Add/Update/Delete
