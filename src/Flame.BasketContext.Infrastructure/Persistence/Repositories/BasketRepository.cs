@@ -7,7 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Flame.BasketContext.Infrastructure.Persistence.Repositories;
 
-public class BasketRepository(BasketAppDbContext dbContext, IMapper mapper) : IBasketRepository
+public class BasketRepository(
+    BasketAppDbContext dbContext,
+    IMapper mapper) : IBasketRepository
 {
     public async Task AddAsync(Basket basket, CancellationToken cancellationToken)
     {
