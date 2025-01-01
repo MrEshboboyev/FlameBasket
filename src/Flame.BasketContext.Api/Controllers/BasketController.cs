@@ -19,9 +19,12 @@ public class BasketController(
     public async Task<IActionResult> GetBasket(Guid id)
     {
         var result = await _sender.Send(new GetBasketQuery(id));
-        
-        return result.IsSuccess ? Ok(result) : HandleError(result.Error);
+
+        return result.IsSuccess 
+            ? Ok(result.Value) // Return the value of the successful result 
+            : HandleError(result.Error); // Handle the error appropriately
     }
+
 
     // POST api/basket
     [HttpPost]
