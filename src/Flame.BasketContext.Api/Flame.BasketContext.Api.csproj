@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
+      <ProjectReference Include="..\common\Flame.Common.Domain\Flame.Common.Domain.csproj" />
     </ItemGroup>
 
 </Project>
