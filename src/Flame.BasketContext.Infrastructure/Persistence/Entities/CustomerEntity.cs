@@ -1,4 +1,4 @@
-﻿namespace Flame.BasketContext.Infrastructure.Entities;
+﻿namespace Flame.BasketContext.Infrastructure.Persistence.Entities;
 
 public class CustomerEntity
 {

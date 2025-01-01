@@ -1,8 +1,8 @@
-﻿using Flame.BasketContext.Infrastructure.Entities;
+﻿using Flame.BasketContext.Infrastructure.Persistence.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Flame.BasketContext.Infrastructure.Configurations;
+namespace Flame.BasketContext.Infrastructure.Persistence.Configurations;
 
 public class BasketConfiguration : IEntityTypeConfiguration<BasketEntity>
 {
