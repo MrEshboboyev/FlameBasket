@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\common\Flame.Common.Domain\Flame.Common.Domain.csproj" />
+      <ProjectReference Include="..\Flame.BasketContext.Application\Flame.BasketContext.Application.csproj" />
     </ItemGroup>
 
 </Project>
