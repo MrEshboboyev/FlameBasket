@@ -13,6 +13,7 @@
     <ItemGroup>
       <ProjectReference Include="..\common\Flame.Common.Domain\Flame.Common.Domain.csproj" />
       <ProjectReference Include="..\Flame.BasketContext.Application\Flame.BasketContext.Application.csproj" />
+      <ProjectReference Include="..\Flame.BasketContext.Infrastructure\Flame.BasketContext.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
