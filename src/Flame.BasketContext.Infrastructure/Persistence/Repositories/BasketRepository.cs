@@ -75,7 +75,7 @@ public class BasketRepository(
         {
             // Use the new seller
             basketItemEntity.SellerId = basketItemEntity.Seller.Id;
-            dbContext.Sellers.Attach(basketItemEntity.Seller); // Attach the new Seller
+            dbContext.Sellers.Add(basketItemEntity.Seller); // Attach the new Seller
         }
 
         // Add the basket item to the basket
@@ -99,7 +99,7 @@ public class BasketRepository(
             .Include(b => b.Customer)
             .Include(b => b.Coupon)
             .Include(b => b.BasketItems)
-            .ThenInclude(bi => bi.Seller)
+                .ThenInclude(bi => bi.Seller)
             .Where(b => b.Id == id)
             .FirstOrDefaultAsync();
 
