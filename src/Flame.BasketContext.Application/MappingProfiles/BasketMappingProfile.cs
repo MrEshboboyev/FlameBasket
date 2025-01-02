@@ -8,15 +8,17 @@ public class BasketMappingProfile : Profile
     {
         // Map Basket to BasketDto
         CreateMap<Basket, BasketDto>()
-            .ForMember(dest => dest.BasketItems, 
+            .ForMember(dest => dest.BasketItems,
                 opt => opt.MapFrom(
-                    src => src.BasketItems.ToDictionary(
-                        kvp => MapSeller(kvp.Key),
-                        kvp => new BasketItemInfoDto
+                    src => src.BasketItems.Select(kvp => new BasketItemGroupDto
+                    {
+                        Seller = MapSeller(kvp.Key),
+                        BasketItemInfo = new BasketItemInfoDto
                         {
                             Items = kvp.Value.Items.Select(MapBasketItem).ToList(),
                             ShippingAmountLeft = kvp.Value.ShippingAmountLeft
-                        })))
+                        }
+                    }).ToList()))
             .ForMember(dest => dest.CouponId,
                 opt => opt.MapFrom(
                     src => src.CouponId));
