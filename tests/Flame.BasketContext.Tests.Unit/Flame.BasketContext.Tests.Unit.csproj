@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\common\Flame.Common.Domain\Flame.Common.Domain.csproj" />
+      <ProjectReference Include="..\Flame.BasketContext.Tests.Data\Flame.BasketContext.Tests.Data.csproj" />
     </ItemGroup>
 
 </Project>

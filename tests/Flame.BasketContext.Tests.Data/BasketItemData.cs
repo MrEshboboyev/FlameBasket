@@ -1,7 +1,7 @@
 ﻿using Flame.BasketContext.Domain.Baskets;
 using Flame.Common.Domain.Primitives;
 
-namespace Flame.BasketContext.Data;
+namespace Flame.BasketContext.Tests.Data;
 
 public static class BasketItemData
 {

@@ -18,7 +18,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.BasketContext.Infrast
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.BasketContext.Api", "src\Flame.BasketContext.Api\Flame.BasketContext.Api.csproj", "{8443CDB7-B7E9-4C3D-B96B-D75689A5802B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.BasketContext.Data", "tests\Flame.BasketContext.Data\Flame.BasketContext.Data.csproj", "{9064E03D-F9A3-43BE-909F-EC661B45055C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.BasketContext.Tests.Data", "tests\Flame.BasketContext.Tests.Data\Flame.BasketContext.Tests.Data.csproj", "{9064E03D-F9A3-43BE-909F-EC661B45055C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.BasketContext.Tests.Unit", "tests\Flame.BasketContext.Tests.Unit\Flame.BasketContext.Tests.Unit.csproj", "{10D05D7D-9C12-4FF1-9A0E-F3D66ED96796}"
 EndProject

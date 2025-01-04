@@ -1,7 +1,7 @@
 ﻿using Flame.BasketContext.Domain.Coupons;
 using Flame.Common.Domain.ValueObjects;
 
-namespace Flame.BasketContext.Data;
+namespace Flame.BasketContext.Tests.Data;
 
 public static class CouponData
 {

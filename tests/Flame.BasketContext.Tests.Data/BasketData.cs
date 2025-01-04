@@ -1,6 +1,6 @@
 ﻿using Flame.BasketContext.Domain.Baskets;
 
-namespace Flame.BasketContext.Data;
+namespace Flame.BasketContext.Tests.Data;
 
 public static class BasketData
 {
