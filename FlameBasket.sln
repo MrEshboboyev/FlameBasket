@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.BasketContext.Api", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.BasketContext.Data", "tests\Flame.BasketContext.Data\Flame.BasketContext.Data.csproj", "{9064E03D-F9A3-43BE-909F-EC661B45055C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flame.BasketContext.Tests.Unit", "tests\Flame.BasketContext.Tests.Unit\Flame.BasketContext.Tests.Unit.csproj", "{10D05D7D-9C12-4FF1-9A0E-F3D66ED96796}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,7 @@ Global
 		{311D84E4-E60B-4285-9A3C-5F229124C9C1} = {AF35F5B2-8C37-4BAD-BAD6-DCC196C4F495}
 		{8443CDB7-B7E9-4C3D-B96B-D75689A5802B} = {AF35F5B2-8C37-4BAD-BAD6-DCC196C4F495}
 		{9064E03D-F9A3-43BE-909F-EC661B45055C} = {371B23EA-E029-48BA-9310-C2E3868D5DAA}
+		{10D05D7D-9C12-4FF1-9A0E-F3D66ED96796} = {371B23EA-E029-48BA-9310-C2E3868D5DAA}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{62666E5E-A96D-4114-B05F-D75F814026F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -64,5 +67,9 @@ Global
 		{9064E03D-F9A3-43BE-909F-EC661B45055C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9064E03D-F9A3-43BE-909F-EC661B45055C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9064E03D-F9A3-43BE-909F-EC661B45055C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10D05D7D-9C12-4FF1-9A0E-F3D66ED96796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10D05D7D-9C12-4FF1-9A0E-F3D66ED96796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10D05D7D-9C12-4FF1-9A0E-F3D66ED96796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10D05D7D-9C12-4FF1-9A0E-F3D66ED96796}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
